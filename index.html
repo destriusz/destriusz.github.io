@@ -1,2 +1,65 @@
-cos
-kompletne cos
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@destriusz</title>
+    <style>
+        @keyframes blink {
+            0% {
+                text-shadow: 0 0 10px #fff;
+            }
+            50% {
+                text-shadow: 0 0 20px #fff;
+            }
+            100% {
+                text-shadow: 0 0 10px #fff;
+            }
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .nickname {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+            font-weight: bold;
+            animation: blink 2s infinite;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        .discord-image {
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+<video class="background-video" autoplay loop muted>
+    <source src="https://cdn.discordapp.com/attachments/986748541001162865/1124101854201135204/background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<a href="https://discord.com/users/760518294049521716" target="_blank" class="nickname">@destriusz</a>
+<img class="discord-image" src="https://discord.c99.nl/widget/theme-4/760518294049521716.png" alt="Discord Image">
+</body>
+</html>
