@@ -1,2 +1,1 @@
-# cos
-tak
+# destriusz.github.io
